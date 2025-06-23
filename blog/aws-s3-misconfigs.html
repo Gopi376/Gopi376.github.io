@@ -1,0 +1,6 @@
+# Finding Exposed S3 Buckets  
+**Tools**: AWS CLI, S3Scanner  
+**Method**:  
+1. Enumerated buckets using `aws s3 ls`.  
+2. Checked permissions with `s3api get-bucket-acl`.  
+**Impact**: Reported 3 buckets with public write access. 
