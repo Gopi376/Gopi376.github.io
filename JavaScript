@@ -1,0 +1,6 @@
+// js/phishing-demo.js
+function analyzeURL() {
+    const url = document.getElementById("url-input").value;
+    const isPhishing = url.includes("login") || url.includes("bank");
+    alert(isPhishing ? "⚠️ Phishing risk!" : "✅ Legitimate URL");
+}
